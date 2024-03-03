@@ -4,6 +4,7 @@ const bosdyParser = require('body-parser');
 const { PORT } = require('./config/serverConfig');
 const apiRoutes= require('./routers/index');
 
+//const UserRepository= require('./repository/user-repository');
 // const {User}= require('./models/index');
 // const bcrypt = require('bcrypt');
 
@@ -20,6 +21,10 @@ const prepareAndStartServer=()=>{
         // const incomingPassword='12345634';
         // const user= await User.findByPk(3);
         // const response= bcrypt.compareSync(incomingPassword,user.password);
+        // console.log(response);
+
+        // const repo= new UserRepository();
+        // const response= await repo.getById(1);
         // console.log(response);
     })
 }
